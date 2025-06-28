@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="is an interactive web page that is used to inventory products"
+    />
+    <meta name="keywords" content="products, price, gestion, " />
+    <meta name="sitedomain" content="aca pones la url del sitio o del github">
+    <meta name="organization" content="s4mue3l2005" />
+    <meta name="author" content="Samuel David Arena Jimenez" />
+    <meta name="designer" content="Samuel David Arena Jimenez" />
+    <meta
+      name="copyright"
+      content="© 2025 Samuel Arena. All rights reserved"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Inventory_Management</h1>
+    </header>
+
+    <main>
+      <section class="form-section">
+        <h2>Add / Edit Product</h2>
+        <form id="productForm">
+          <input type="text" id="productId" placeholder="ID" required />
+          <input type="text" id="productName" placeholder="Name" required />
+          <input type="number" id="productPrice" placeholder="Price" required />
+          <input
+            type="text"
+            id="productCategory"
+            placeholder="Category"
+            required
+          />
+          <button type="submit">Add</button>
+        </form>
+      </section>
+
+      <section class="list-section">
+        <h2>Product List</h2>
+        <article id="productList"></article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; ©2025 Samuel Arena. All rights reserved.</p>
+    </footer>
+
+    <div id="app"></div>
+    <script type="module" src="./src/js/gestion_datos.js"></script>
+  </body>
+</html>
